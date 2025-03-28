@@ -6,21 +6,15 @@ public class Exercicio02 {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
 		
-		int somaPares = 0;
-		int somaImpares = 0;
+		System.out.println("Insira o raio do circulo");
+		double raio = input.nextDouble();
 		
-		for (int i = 1; i <=100; i ++) {
-			if (i % 2 == 0) {
-				somaPares += i;
-			}
-			else {
-				somaImpares += i;
-			}
-			
-			
-		}
-		System.out.println("Soma dos numeros Pares:" + somaPares);
-		System.out.println("Soma dos numeros Impares:" + somaImpares);
+		double area = Math.PI*Math.pow(raio, 2);
+
+		System.out.println("O valor do raio é:");
+		System.out.println(area);
+		
+		
 	}
 
 }

@@ -6,33 +6,24 @@ public class Exercico09 {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner (System.in);
 		
-		String nomeAluno;
+		System.out.println("insira um número");
+		int numero = input.nextInt();
 		
-		do {
-			System.out.println("Digite o Nome do Aluno ou (fim para sair):");
-			nomeAluno = input.next();
+		System.out.println("insira um número");
+		int numeroDois = input.nextInt();
+		
+		if (numero > numeroDois) {
+			System.out.println("O nmero " + numero + " é o maior");
+		} else {
+			System.out.println("O nmero" + numeroDois + " é o menor");
 			
-			if (!nomeAluno.equalsIgnoreCase("fim")) {
-				
-				System.out.println(" Digite a Nota ");
-				double nota1 = input.nextDouble();
-				
-				System.out.println("Digite a Nota");
-				double nota2 = input.nextDouble();
-				
-				double media = (nota1 + nota2) / 2;
 			
-				
-				System.out.println("Média do Aluno:" + nomeAluno + ":" + media);
-				input.next();
-			}
+		}
 		
-				
-		} while (!nomeAluno.equalsIgnoreCase("fim"));
-		System.out.println("Media Finalizada");
-	
 		
-	
+		
+		
+		
 
 	}
 

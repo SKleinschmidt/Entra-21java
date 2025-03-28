@@ -1,49 +1,45 @@
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Exercicio06 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner (System.in);
+		DecimalFormat df = new DecimalFormat("0.00");
 		
-		double somaAlturas = 0;
-		int somaPessoas = 0;
-		double altura;
+		System.out.println("Vendedor");
+		String nome = input.next();
 		
-		do { 
-			System.out.println("Digite a altura da pessoa ( ou 0 para sair):");
-			 altura = input.nextDouble();
-			 
-			 if (altura != 0) {
-				 somaAlturas += altura;
-				 somaPessoas ++;
-			 }
-			 
-			 } 
-			 while (altura != 0);
-			 
-			 if (somaPessoas > 0) {
-				 double mediaAltura = somaAlturas / somaPessoas;
-				System.out.println("\nMédia das Alturas:" + mediaAltura);
-					
-				}
-			 else {
-				 System.out.println("\nNenhuma altura foi inserida.");
-			 }
-			 
-			
-			
-			 
-			 
+		System.out.println("Salario Fixo");
+		double salario = 3500;
+		
+		System.out.println(salario);
+		
+		System.out.println("Total em vendas realizadas");
+		double vendas = input.nextDouble();
+		
+		System.out.println(vendas);
+		
+		System.out.println("Comição de Vendas");
+		double porcentagemComissao = 0.15;
+		double comicao = vendas * porcentagemComissao;
+		
+		System.out.println(comicao);
+		
+		double salarioComicao = salario + comicao;
+		
+		System.out.println("Salario com a comição:" + salarioComicao);
 		
 		
 		
-	
 		
-		}
-	
+		
+		
+		
+		
+		
+
+	}
+
 }
-
-
-
-
