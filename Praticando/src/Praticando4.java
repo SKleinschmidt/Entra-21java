@@ -28,8 +28,8 @@ public class Praticando4 {
 			System.out.println("Tratamento de esgoto:" + tratamentoEsgoto);
 			System.out.println("Taxa de lixo:" + coletaLixo);
 		}
-		else if (consumo <= 20) {
-			consumo = ((consumo -10) * valorMetroscubicos11A20) + taxaMinima;
+		else if (consumo >= 11 && consumo <= 20) {
+			consumo = (consumo * valorMetroscubicos11A20) + taxaMinima;
 			tratamentoEsgoto = consumo * tratamentoEsgoto;
 			System.out.println("Valor a ser pago:" + consumo);
 			System.out.println("Tratamento de esgoto:" + tratamentoEsgoto);
